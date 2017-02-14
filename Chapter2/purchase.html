@@ -1,0 +1,71 @@
+<!Doctype html>
+<html lang="en"> <!-- Start of html page-->
+<head> <!-- Start of head -->
+<!--
+	CIS166AA: Book Blog
+	Author: Chelsea Blair
+	Date:2/5/2017
+-->
+   <title>Book Blog</title>
+   <meta charset="utf-8">
+   <!--this meta tag is to help make page for mobile devices(below)-->
+   <meta name="veiwport" content="width=device-width, intial-scale=1.0">
+   <link rel="stylesheet" href="bookblog.css">
+   <!--JavaScript-->
+   <script src = "modernizr.custom.05819.js"></script>
+<!--[if lt IE 9]>
+<script scr="http://html5shim.google.code/svn/trunk/html5.js">
+</script>
+<![endif]-->
+</head><!-- End of head-->
+<body> <!-- Start of body-->
+ <div id="wrapper"> <!--Start of wrapper-->
+   <header> <!--Start of header-->
+	<h1>Fantasy</h1>
+   </header> <!--End of header-->
+   <nav> <!--Start of nav-->
+	<a href="index.html">Home</a>
+	<a href="month.html">Book of the Month</a>
+	<a href="fantasy.html">Fantasy</a>
+	<a href="sciencefic.html">Sciense Fiction</a>
+	<a href="purchase.html">Purchase</a>
+   </nav> <!--End of nav-->
+ <div id="content"> <!--Start of content-->   
+   <main> <!--Start of mainbody-->
+	<h3>
+		Here you can see which books you want and how much it would cost.
+	</h3>
+	<hr>
+	<!--The form for the list of books-->
+    <form>
+         <input type="checkbox" id="item1" value="15" />
+         <label for="item1">The Host by: Stephenie Meyers ($15.00)</label>
+		 <br>
+         <input type="checkbox" id="item2" value="8" />
+         <label for="item2">Magic Bites by: Ilona Andrews ($7.19)</label>
+		 <br>
+         <input type="checkbox" id="item3" value="7" />
+         <label for="item3">Dragon Actually by: G.A. Aiken ($6.99)</label>
+		 <br>
+         <input type="checkbox" id="item4" value="8" />
+         <label for="item4">Written in Red by: Anne Bishop ($7.99)</label>
+		 <br>
+         <input type="checkbox" id="item5" value="9" />
+         <label for="item5">The Merchant of Death by: D.J. MacHale ($8.99)</label>
+		 <br>
+         <input type="button" id="submit" value="Submit" />
+      </form>
+   </main> <!--End of main-->
+ </div> <!--End of Content-->
+   <footer> <!--Start of footer-->
+	<p>Created by: Chelsea Lynn</p>   
+   </footer> <!--End of footer--> 
+ </div> <!--End of wrapper-->
+ 
+<!--Calling the function for the books-->
+	<script>
+      document.getElementById("submit").addEventListener("click", calcTotal, false);
+	</script>
+ 
+</body> <!-- End of body-->
+</html> <!-- End of html page-->
