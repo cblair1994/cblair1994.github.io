@@ -1,0 +1,88 @@
+<!Doctype html>
+<html lang="en"> <!-- Start of html page-->
+<head> <!-- Start of head -->
+<!--
+	CIS166AA: Book Blog
+	Author: Chelsea Blair
+	Date: 2/5/2017
+-->
+   <title>Book Blog</title>
+   <meta charset="utf-8">
+   <!--this meta tag is to help make page for mobile devices(below)-->
+   <meta name="veiwport" content="width=device-width, intial-scale=1.0">
+   <link rel="stylesheet" href="bookblog.css">
+   <!--JavaScript-->
+   <script src = "modernizr.custom.05819.js"></script>
+<!--[if lt IE 9]>
+<script scr="http://html5shim.google.code/svn/trunk/html5.js">
+</script>
+<![endif]-->
+</head><!-- End of head-->
+<body> <!-- Start of body-->
+ <div id="wrapper"> <!--Start of wrapper-->
+   <header> <!--Start of header-->
+	<h1>Book Blog</h1>
+   </header> <!--End of header-->
+   <nav> <!--Start of nav-->
+	<a href="index.html">Home</a>
+	<a href="month.html">Book of the Month</a>
+	<a href="fantasy.html">Fantasy</a>
+	<a href="sciencefic.html">Science Fiction</a>
+	<a href="purchase.html">Purchase</a>
+   </nav> <!--End of nav-->
+ <div id="content"> <!--Start of content-->   
+   <main> <!--Start of mainbody-->
+	<p>
+		Hi! My name is Chelsea. This website is going to be a place 
+		where I can share about the books I have read. Reading has 
+		always been a great passion of mine. It is something I do 
+		everyday to help me relax and clear my mind.
+	</p>
+	<!--Image of me-->
+	<div id="floatright">
+		<img src="home/img/Me.jpg" alt="Picture of Chelsea">
+	</div><!--end of floatright-->	
+	<p>
+		On here I will list some of my favorite books and every month 
+		I will post about a book that I will be reading.
+	</p>		
+	<h2>Favorite Genre</h2>
+	<ul>
+	<li>Fantasy</li>
+	<li>Science Fiction</li>
+	</ul>
+	<p>On the page Book of The Month, I will be choosing a book every month and writing about my thoughts towards the book.</p>
+	<!--The form for monthly updates-->
+	<h2>Sign up for monthly updates!</h2>
+      <form>
+        <fieldset id="contactinfo">
+          <label for="nameinput">
+            Name
+            <input type="text" id="nameinput" name="name" placeholder="first and last name" />
+          </label>&nbsp &nbsp
+          <label for="emailinput">
+            Email
+            <input type="text" id="emailinput" name="email" placeholder="address@example.com" />
+          </label>&nbsp &nbsp
+          <label for="bookinput">
+            Favorite Book
+            <input type="text" id="bookinput" name="book" placeholder="Twilight by Stephenie Meyers" />
+          </label>
+        </fieldset>
+        <fieldset id="submitbutton">
+          <input type="submit"  onclick="validateContactInfo()" value="Submit" />
+        </fieldset>
+     </form>
+   </main> <!--End of main-->
+ </div> <!--End of content--> 
+   <footer> <!--Start of footer-->
+	<p>Created by: Chelsea Lynn</p>   
+   </footer> <!--End of footer--> 
+ </div> <!--End of wrapper-->
+ 
+ <!--Function for form-->
+   <script src="contact.js"></script>
+
+ 
+</body> <!-- End of body-->
+</html> <!-- End of html page-->
