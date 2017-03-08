@@ -1,0 +1,74 @@
+/*Book Blog
+	Author: Chelsea Blair
+	Date:7/25/2016 */
+	
+/*On every page*/
+#wrapper{ min-width: 700px;
+			max-width:1024px;
+			margin-left: auto;
+			margin-right: auto;
+			
+			background-color: #330000;
+			box-shadow: 5px 5px 5px #828282;
+			-webkit-box-shadow: 5px 5px 5px #828282;
+			-moz-box-shadow: 5px 5px 5px #828282;			
+}
+body{ background-color: #330000;
+		color: #ffffcc;
+		font-family: Verdana, Arial, sans-serif;
+		background-image: url(img/bookpages.jpg);
+		
+}
+header{ background-color: #ffffcc;
+		color: #330000;
+		height: 100px;
+		margin: 0%;
+		text-align: center;
+		padding: 5px 10px 5px 10px;
+}
+#content{ padding: 25px 25px 25px 25px;
+			
+}
+
+footer{ background-color: #ffffcc;
+		color: #330000;
+		font-size: 75%;
+		font-style: italic;
+		text-align: center;
+		padding: 10px 10px 10px 10px;
+		
+		
+}
+nav{ text-align: center;
+}
+nav a{color:#ffffcc;
+		font-weight: bold;
+		padding-right: 10px;
+}
+
+
+/*End of every page*/
+
+/*Start of month page*/
+#pastmonths{ text-align: center;
+	float: right;
+	width: 100px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+#pastmonths ul{ list-style-type: none;
+		margin-left: 0%;
+		padding: 10px;
+}
+#pastmonths a{ text-decoration: none;
+		padding-bottom: 15px;
+		font-weight: bold;
+}
+#pastmonths a:link{ color: #ffffcc;
+}
+#pastmonths a:visited{ color: #b7a79c;
+}
+#pastmonths a:hover{ color: #c1bfb5;
+}
+
+/*End of month*/
