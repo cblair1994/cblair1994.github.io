@@ -86,6 +86,100 @@ h2{
 }
 /*End of month*/
 
+/*purchase page*/
+ #errorMessage {
+   display: none;
+   width: 80%;
+   text-align: center;
+   padding: 10px;
+   margin: 15px auto 5px;
+   background: #330000;
+   color: black;
+   border: 5px solid rgb(190,50,38);
+   font-weight: bold;
+}
 
- 
-  
+
+/* form */
+form {
+   padding: 10px;
+}
+
+fieldset {
+   margin-bottom: 10px;
+   position: relative;
+   padding: 2.5em 1em 0.5em 1em;
+   background: #330000;
+}
+
+fieldset fieldset {
+   padding-top: 15px;
+}
+
+legend, #submit, #instrlabel {
+   font-family: arial, helvetica, sans-serif;
+   font-weight: bold;
+}
+
+legend {
+   position: absolute;
+   top: 0;
+   left: 0;
+   font-size: 1.25em;
+   margin-top: 0.5em;
+   margin-left: 0.5em;
+}
+
+fieldset fieldset legend {
+   font-size: 1em;
+   margin-top: 25px;
+   top: -30px;
+   left: 8px;
+}
+
+input, textarea {
+   font-size: 1em;
+}
+
+#instructions {
+   display: block;
+}
+
+
+#deliveryinfo label {
+   display: block;
+   float: left;
+   clear: left;
+   margin-top: 5px;
+}
+
+#deliveryinfo input {
+   display: block;
+   margin-left: 130px;
+}
+
+#nameinput, #emailinput, #addrinput {
+   width: 30em;
+}
+
+#cityinput, #phoneinput {
+   width: 12em;
+}
+
+
+#instrlabel {
+   display: block;
+   margin: 1em 0 0.5em 0;
+}
+
+#submitBtn {
+   font-size: 1.25em;
+}
+
+#submitbutton {
+   background: inherit;
+   border: none;
+   padding: 0.5em 0 0 0;
+   text-align: center;
+}
+/*End of purchase page*/  
