@@ -1,0 +1,30 @@
+
+#location {
+   padding: 0 20px;
+   display: none;
+}
+
+#map {
+   width: 100%;
+   min-height: 200px;
+   margin: 10px 0;
+}
+
+nav ul li {
+   display: inline-block;
+   width: 50%;
+   text-align: center;
+   font-size: 1.5em;
+   padding: 0.2em;
+   border-top: 5px solid #BBBBBB;
+   color: #BBBBBB;
+}
+
+nav ul li.current {
+   color: #D2D0B0;
+   background: #5B291B;
+}
+
+nav ul li:first-of-type {
+   border-right: 2px solid #BBBBBB;
+}

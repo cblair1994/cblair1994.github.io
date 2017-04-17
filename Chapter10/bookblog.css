@@ -1,0 +1,189 @@
+/*
+	CIS166AA: Book Blog
+	Author: Chelsea Blair
+	Date:2/5/2017
+*/
+	
+/*On every page*/
+#wrapper{ min-width: 700px;
+			max-width:1024px;
+			margin-left: auto;
+			margin-right: auto;
+			
+			background-color: #330000;
+			box-shadow: 5px 5px 5px #828282;
+			-webkit-box-shadow: 5px 5px 5px #828282;
+			-moz-box-shadow: 5px 5px 5px #828282;			
+}
+body{ background-color: #330000;
+		color: #ffffcc;
+		font-family: Verdana, Arial, sans-serif;
+		background-image: url(home/img/bookpages.jpg);
+		
+}
+header{ background-color: #ffffcc; 
+ 		color: #330000;
+		height: 100px;
+		margin: 0%;
+		text-align: center;
+		padding: 5px 10px 15px 10px;
+		font-size: 30px;
+}
+#content{ padding: 25px 25px 25px 25px;
+			
+}
+
+footer{ background-color: #ffffcc;
+		color: #330000;
+		font-size: 75%;
+		font-style: italic;
+		text-align: center;
+		padding: 10px 10px 10px 10px;
+		
+		
+}
+nav{ text-align: center;
+}
+nav a{color:#ffffcc;
+		font-weight: bold;
+		padding-right: 10px;
+		
+}
+
+
+/*End of every page*/
+
+/*Start of Home page*/
+#floatright{ padding-left: 20px;
+			float: right;
+}
+
+#infoDisplay {
+	display: none;
+}
+/*End of Home page*/
+
+/*Start of month page*/
+#pastmonths{ text-align: center;
+	float: right;
+	width: 100px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+#pastmonths ul{ list-style-type: none;
+		margin-left: 0%;
+		padding: 10px;
+}
+#pastmonths a{ text-decoration: none;
+		padding-bottom: 15px;
+		font-weight: bold;
+}
+#pastmonths a:link{ color: #ffffcc;
+}
+#pastmonths a:visited{ color: #b7a79c;
+}
+#pastmonths a:hover{ color: #c1bfb5;
+}
+
+h2{
+	text-align: center;
+}
+/*End of month*/
+
+/*purchase page*/
+ #errorMessage {
+   display: none;
+   width: 80%;
+   text-align: center;
+   padding: 10px;
+   margin: 15px auto 5px;
+   background: #330000;
+   color: black;
+   border: 5px solid rgb(190,50,38);
+   font-weight: bold;
+}
+
+
+/* form */
+form {
+   padding: 10px;
+}
+
+fieldset {
+   margin-bottom: 10px;
+   position: relative;
+   padding: 2.5em 1em 0.5em 1em;
+   background: #330000;
+}
+
+fieldset fieldset {
+   padding-top: 15px;
+}
+
+legend, #submit, #instrlabel {
+   font-family: arial, helvetica, sans-serif;
+   font-weight: bold;
+}
+
+legend {
+   position: absolute;
+   top: 0;
+   left: 0;
+   font-size: 1.25em;
+   margin-top: 0.5em;
+   margin-left: 0.5em;
+}
+
+fieldset fieldset legend {
+   font-size: 1em;
+   margin-top: 25px;
+   top: -30px;
+   left: 8px;
+}
+
+input, textarea {
+   font-size: 1em;
+}
+
+#instructions {
+   display: block;
+}
+
+
+#deliveryinfo label {
+   display: block;
+   float: left;
+   clear: left;
+   margin-top: 5px;
+}
+
+#deliveryinfo input {
+   display: block;
+   margin-left: 130px;
+}
+
+#nameinput, #emailinput, #addrinput {
+   width: 30em;
+}
+
+#cityinput, #phoneinput {
+   width: 12em;
+}
+
+
+#instrlabel {
+   display: block;
+   margin: 1em 0 0.5em 0;
+}
+
+#submitBtn {
+   font-size: 1.25em;
+}
+
+#submitbutton {
+   background: inherit;
+   border: none;
+   padding: 0.5em 0 0 0;
+   text-align: center;
+}
+/*End of purchase page*/  
