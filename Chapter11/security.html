@@ -1,0 +1,84 @@
+<!Doctype html>
+<html lang="en"> <!-- Start of html page-->
+<head> <!-- Start of head -->
+<!--
+	CIS166AA: Book Blog
+	Author: Chelsea Blair
+	Date: 2/5/2017
+-->
+   <title>Book Blog</title>
+   <meta charset="utf-8">
+   <!--this meta tag is to help make page for mobile devices(below)-->
+   <meta name="veiwport" content="width=device-width, intial-scale=1.0">
+   <link rel="stylesheet" href="bookblog.css">
+   <link rel="stylesheet" href="security.css">
+   <link href='http://fonts.googleapis.com/css?family=Aladin' rel='stylesheet' type='text/css'>
+   <!--JavaScript-->
+   <script src = "modernizr.custom.05819.js"></script>
+<!--[if lt IE 9]>
+<script scr="http://html5shim.google.code/svn/trunk/html5.js">
+</script>
+<![endif]-->
+</head><!-- End of head-->
+<body> <!-- Start of body-->
+ <div id="wrapper"> <!--Start of wrapper-->
+   <header> <!--Start of header-->
+	<h1>Book Blog</h1>
+   </header> <!--End of header-->
+   <nav> <!--Start of nav-->
+	<a href="index.html">Home</a>
+	<a href="month.html">Book of the Month</a>
+	<a href="fantasy.html">Fantasy</a>
+	<a href="sciencefic.html">Science Fiction</a>
+	<a href="purchase.html">Purchase</a>
+	<a href="security.html">Security</a>
+   </nav> <!--End of nav-->
+ <div id="content"> <!--Start of content-->   
+   <main> <!--Start of mainbody-->
+	<!--List of informaiont-->
+	<p id="name"></p>
+    <p id="version"></p>
+    <p id="platform"></p>
+    <p id="agent"></p>
+	<br>
+	
+	<!-- Map -->
+	<nav>
+      <ul>
+         <li id="setup" class="current">Security Tips</li>
+         <li id="dir">Directions</li>
+      </ul>
+   </nav>
+   
+	<article id="setup">
+	<ol>
+		<li>Keep software and computer up-to-date.</li>
+		<li>Create secure passwords.</li>
+		<li>Have an anti-virus on the computer and keep it up-to-date.</li>
+		<li>Be carefull when looking at your email.</li>
+		<li>Make sure a download is from a safe website.</li>
+	</ol>
+   </article>
+	
+	<article id="location">
+      <div id="map"></div>
+    </article>
+	
+   </main> <!--End of main-->
+ </div> <!--End of content--> 
+   <footer> <!--Start of footer-->
+	<p>Created by: Chelsea Lynn</p>   
+   </footer> <!--End of footer--> 
+ </div> <!--End of wrapper-->
+	<!--Script to get user Information-->
+	<script>
+      "use strict";
+      document.getElementById("name").innerHTML = "Name: " + navigator.appName;
+      document.getElementById("version").innerHTML = "Version: " + navigator.appVersion;
+      document.getElementById("platform").innerHTML = "Operating platform: " + navigator.platform;
+      document.getElementById("agent").innerHTML = "User agent: " + navigator.userAgent;
+    </script>
+	<script src="map.js"></script>
+	
+</body> <!-- End of body-->
+</html> <!-- End of html page-->
