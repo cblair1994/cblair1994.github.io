@@ -1,0 +1,15 @@
+Validations
+
+FileName:
+index.html
+
+Field Lable:
+-fname
+-lname
+-userEmail
+
+submision:
+-if fname is filled out
+-if lname is filled out
+-if userEmail is filled out and the email is the correct format
+

@@ -1,0 +1,120 @@
+<!Doctype html>
+<html lang="en"> <!-- Start of html page-->
+<head> <!-- Start of head -->
+<!--
+	CIS166AA: Book Blog
+	Author: Chelsea Blair
+	Date: 2/5/2017
+-->
+   <title>Book Blog</title>
+   <meta charset="utf-8">
+   <!--this meta tag is to help make page for mobile devices(below)-->
+   <meta name="veiwport" content="width=device-width, intial-scale=1.0">
+   <link rel="stylesheet" href="bookblog.css">
+   <link rel="stylesheet" href="home/ajax.css">
+
+   <!--JavaScript-->
+   <script src = "modernizr.custom.05819.js"></script>
+<!--[if lt IE 9]>
+<script scr="http://html5shim.google.code/svn/trunk/html5.js">
+</script>
+<![endif]-->
+</head><!-- End of head-->
+<body> <!-- Start of body-->
+ <div id="wrapper"> <!--Start of wrapper-->
+   <header> <!--Start of header-->
+	<h1>Book Blog</h1>
+   </header> <!--End of header-->
+   <nav> <!--Start of nav-->
+	<a href="index.html">Home</a>
+	<a href="month.html">Book of the Month</a>
+	<a href="fantasy.html">Fantasy</a>
+	<a href="sciencefic.html">Science Fiction</a>
+	<a href="purchase.html">Purchase</a>
+	<a href="security.html">Security</a>
+   </nav> <!--End of nav-->
+ <div id="content"> <!--Start of content-->   
+   <main> <!--Start of mainbody-->
+	<p>
+		Hi! My name is Chelsea. This website is going to be a place 
+		where I can share about the books I have read. Reading has 
+		always been a great passion of mine. It is something I do 
+		everyday to help me relax and clear my mind.
+	</p>
+	<!--Image of me-->
+	<div id="floatright">
+		<img src="home/img/Me.jpg" alt="Picture of Chelsea">
+	</div><!--end of floatright-->	
+	<p>
+		On here I will list some of my favorite books and every month 
+		I will post about a book that I will be reading.
+	</p>		
+	<h2>Favorite Genre</h2>
+	<ul>
+	<li>Fantasy</li>
+	<li>Science Fiction</li>
+	</ul>
+	<!--The form for monthly updates-->
+	<h2>Sign up for monthly updates!</h2>
+      <form>
+        <fieldset id="userInfo">
+			<legend>Contact Information</legend>
+			<label for="fname">First Name:</label>
+			<input type="text" id="fname" />
+			<br><br>
+			<label for="lname">Last Name:</label>
+			<input type="text" id="lname" />
+			<br><br>
+			<label for="userEmail">Email:</label>
+			<input type="email" id="userEmail" />
+			<p id="errorMsg" display="none"></p>
+		</fieldset>
+		<fieldset id="options">
+            <legend><span>Favorite Genres</span></legend>
+            <input type="checkbox" id="fantasy" value="Fantasy" name="favGenre" />
+            <label for="fantasy" id="fantasyLabel">Fantasy</label>
+            <input type="checkbox" id="sciencefic" value="Science Fiction" name="favGenre" />
+            <label for="sciencefic" id="scienceficLabel">Science Fiction</label>
+            <input type="checkbox" id="romance" value="Romance" name="favGenre" />
+            <label for="romance" id="romanceLabel">Romance</label>
+            <input type="checkbox" id="fiction" value="Fiction" name="favGenre" />
+            <label for="fiction" id="fictionLabel">Fiction</label>
+         </fieldset>	
+        <fieldset>
+          <input type="button" value="Submit" id="submitBtn" />
+        </fieldset>
+     </form>
+	 <article>
+		<div id="infoDisplay">
+		<h2>Information Submitted:</h2>
+		<p id="firstName"></p>
+		<p id="lastName"></p>
+		<p id="emailString"></p>
+		<p id="infoString"></p>
+	</div>
+	 </article>
+	 
+	 <!--Ajax and Json-->
+	<article class="ajax">
+		<h2>Sneak Peak at 4 Books</h2>
+		<button id="btn">Press for info on 2 books</button>
+		
+		<div id="book-info"></div>
+	</article>
+	 
+   </main> <!--End of main-->
+ </div> <!--End of content--> 
+   <footer> <!--Start of footer-->
+	<p>Created by: Chelsea Lynn</p>   
+   </footer> <!--End of footer--> 
+ </div> <!--End of wrapper-->
+ <!--Script for ajax-->
+ 	<script src="home/ajax.js"></script>
+
+ 
+ <!--Function for form-->
+   <script src="home/contact.js"></script>
+
+ 
+</body> <!-- End of body-->
+</html> <!-- End of html page-->
